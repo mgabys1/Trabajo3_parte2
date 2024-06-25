@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{ isEditMode ? 'Editar Tarea' : 'Agregar Tarea' }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nombre de la Tarea</ion-label>
+    <ion-input [(ngModel)]="taskName" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Fecha y Hora de Vencimiento</ion-label>
+    <ion-datetime displayFormat="D MMM YYYY H:mm" [(ngModel)]="taskDueDate"></ion-datetime>
+  </ion-item>
+
+  <ion-button expand="full" (click)="saveTask()">{{ isEditMode ? 'Guardar Cambios' : 'Guardar Tarea' }}</ion-button>
+</ion-content>
