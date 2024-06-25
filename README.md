@@ -42,5 +42,5 @@ Manejo de Fechas con Moment.js: Para simplificar la manipulación de fechas y ho
 
 Gestión de Dependencias: Se mantuvo un registro cuidadoso de las versiones de las dependencias y sus compatibilidades, utilizando npm audit y npm outdated para monitorear y actualizar las dependencias según fuera necesario.
 
-## APK Incluido
-En la carpeta apk, Se encuentra un archivo APK precompilado de la aplicación. Se puede instalar este APK en  su dispositivo Android para probar la aplicación directamente.
+## APK 
+Durante el desarrollo de la aplicación, se produjeron complicaciones al intentar generar la carpeta APK, durante la fase de construcción del proyecto, específicamente debido a conflictos con las dependencias al integrar plugins nativos a través de Capacitor, con la instalación de @capacitor/android. A pesar de varios intentos para resolver estos problemas,  con actualizaciones de dependencias y la ejecución de comandos recomendados como npm install --force y npx cap sync, no fue posible superar el error, cabe mencionar que el código en si se encuentra sin errores igualmente funciona al probarlo en el navegador.
